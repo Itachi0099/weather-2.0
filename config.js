@@ -146,3 +146,6 @@ if (typeof module !== 'undefined' && module.exports) {
 if (typeof window !== 'undefined') {
     initConfig();
 }
+
+const WEATHER_API_KEY = 'YOUR_API_KEY';
+const DEFAULT_CITY = 'New York';

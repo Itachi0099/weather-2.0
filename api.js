@@ -295,3 +295,8 @@ const API = new ApiHandler();
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = ApiHandler;
 }
+
+async function getWeather(city) {
+  const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${WEATHER_API_KEY}&units=metric`);
+  return res.json();
+}

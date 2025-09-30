@@ -363,3 +363,8 @@ const AI = new WeatherAI();
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = WeatherAI;
 }
+
+function getAIAdvice(type, weather) {
+  // Return mock advice for demo
+  return `Advice for ${type} in ${weather.condition}`;
+}
